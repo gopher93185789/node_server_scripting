@@ -3,11 +3,11 @@ import * as path from "path";
 
 let homePageHtml: string = "";
 
-export async function RenderHomePage(): Promise<string> {
+export async function RenderAboutPage(): Promise<string> {
   try {
     if (homePageHtml === "") {
       homePageHtml = fs.readFileSync(
-        path.join(__dirname, "home.html"),
+        path.join(__dirname, "about.html"),
         "utf-8"
       ) as string;
     }

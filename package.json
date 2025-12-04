@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./public/globals.css -o ./public/dist.css  && bun  run server.ts"
   },
   "repository": {
     "type": "git",
@@ -13,8 +14,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
     "@types/express": "^5.0.6",
     "@types/node": "^24.10.1",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "tailwindcss": "^4.1.17"
   }
 }
